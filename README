@@ -1,0 +1,65 @@
+# Unified Applicable Time (UAT) Framework
+
+## 📖 Overview
+
+The **Unified Applicable Time (UAT) Framework** is a cosmological framework that incorporates Loop Quantum Gravity (LQG) corrections to resolve cosmological tensions, particularly the **Hubble Tension**.
+
+## 🎯 Available Studies
+
+### 1. First Study: Cosmological Validation
+**Repository**: `uat_explicacion_con_datos_reales`  
+**Objective**: Validation of UAT framework against observational H(z) data  
+**Result**: Statistical equivalence with ΛCDM (χ² = 14.8)
+
+### 2. Latest Study: Hubble Tension Resolution  
+**Repository**: `UAT_vs_Lambda_resolviendo_tension_de_Hubble`  
+**Objective**: Resolve Hubble tension using BAO data  
+**Result**: H₀ = 73.0 km/s/Mpc while maintaining BAO fit
+
+## ⚙️ System Requirements
+
+### Python Dependencies
+```bash
+# Required packages
+numpy>=1.19.0
+pandas>=1.3.0
+matplotlib>=3.3.0
+scipy>=1.6.0
+
+# Recommended packages
+seaborn>=0.11.0
+astropy>=4.3.0
+corner>=2.2.0
+
+# Using pip
+pip install numpy pandas matplotlib scipy seaborn astropy corner
+
+# Using conda
+conda install numpy pandas matplotlib scipy seaborn astropy corner -c conda-forge
+
+git clone https://github.com/miguelpercu/uat_explicacion_con_datos_reales.git
+cd uat_explicacion_con_datos_reales
+
+jupyter notebook UAT_cosmology_framework.ipynb
+
+UAT_realistic_analysis/
+├── analysis/
+│   ├── analysis_configuration.txt
+│   ├── executive_summary.txt
+│   └── physical_interpretation.txt
+├── data/
+│   └── bao_observational_data.csv
+├── figures/
+│   ├── model_residuals.png
+│   ├── parameter_optimization.png
+│   └── UAT_BAO_comparison.png
+└── tables/
+    ├── detailed_predictions.csv
+    ├── final_results_summary.csv
+    └── model_predictions.csv
+
+E_UAT(z,k_early) = √[k_early·Ω_r0(1+z)⁴ + k_early·Ω_m0(1+z)³ + Ω_Λ0]
+r_d^UAT = (c/H_0) ∫ dz'/[E_UAT(z',k_early)·√(3(1+R(z')))]
+
+📞 Contact
+Miguel Angel Percudani - miguel_percudani@yahoo.com.ar
